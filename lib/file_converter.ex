@@ -2,8 +2,7 @@ defmodule FileConverter do
   # 変換するファイルの読み込み
   def read_source(path) do
     case File.read(path)  do
-      { :ok, body }      -> body
-      { :error, reason } -> "source file read error: #{reason}"
+      { :ok, body } -> body
     end
   end
 
